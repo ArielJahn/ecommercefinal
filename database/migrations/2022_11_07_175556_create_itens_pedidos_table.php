@@ -14,7 +14,15 @@ return new class extends Migration
     public function up()
     {
         Schema::create('itens_pedidos', function (Blueprint $table) {
-            $table->id();
+            $table->increments();
+
+            $table->integer("quantidade");
+            $table->decimal("valor", 10,2);
+            $table->datetime("dt_item");
+
+            $table->integer("produto_id");
+            $table->integer("produto_id");
+
             $table->timestamps();
         });
     }

@@ -33,6 +33,12 @@ class InsertProducts extends Migration
 
         $prod6 = new \App\Models\Produto(['nome'=>'Produto 6', 'valor'=>'10', 'foto'=>'images/produto6.jpg', 'descricao'=>'', 'categoria_id'=>$cat->id]);
         $prod6 -> save();
+        
+        $prod7 = new \App\Models\Produto(['nome'=>'Produto 7', 'valor'=>'10', 'foto'=>'images/produto7.jpg', 'descricao'=>'', 'categoria_id'=>$cat->id]);
+        $prod7 -> save();
+
+        $prod8 = new \App\Models\Produto(['nome'=>'Produto 8', 'valor'=>'10', 'foto'=>'images/produto8.jpg', 'descricao'=>'', 'categoria_id'=>$cat->id]);
+        $prod8 -> save();
     }   
 
     /**

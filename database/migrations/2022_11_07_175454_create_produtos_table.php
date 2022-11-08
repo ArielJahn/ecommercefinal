@@ -20,7 +20,7 @@ return new class extends Migration
             $table->decimal("valor", 10,2);
             $table->string("foto")->nullable();
             $table->string("descricao", 255)->nullable();
-            $table->integer("categoria_id")->unsigned;
+            $table->integer("categoria_id")->unsigned();
 
             $table->timestamps();
 

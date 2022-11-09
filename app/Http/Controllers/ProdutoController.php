@@ -22,8 +22,8 @@ class ProdutoController extends Controller
         //select from categorias
         $listaCategorias = Categoria::all();
 
-        //select from produtos limit 4
-        $queryProduto = Produto::limit(4);
+        //select from produtos limit 8 ou + se for acrescentado
+        $queryProduto = Produto::limit(8);
 
         if($idcategoria != 0){
             $queryProduto->where("categoria_id", $idcategoria);

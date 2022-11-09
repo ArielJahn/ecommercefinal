@@ -17,7 +17,7 @@ class ProdutoController extends Controller
         return view("home", $data);
     }
 
-    public function categoria($idcategoria = 0, Request $request){
+    public function categoria(Request $request, $idcategoria = 0){
         $data = [];
         //select from categorias
         $listaCategorias = Categoria::all();

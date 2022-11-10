@@ -4,8 +4,8 @@
                 <div class="card">
                     <img src="{{ asset($prod->foto)}}" class="card-img-top" />
                     <div class="card-body">
-                        <h6 class="card-tittle">{{ $prod->nome }} - {{$prod->valor}}</h6>
-                        <a href="#" class="btn btn-sm btn-secondary">Adicionar Item</a>
+                        <h6 class="card-tittle">{{ $prod->nome }} - R$ {{$prod->valor}}</h6>
+                        <a href="{{  route('adicionar_carrinho', ['idproduto' => $prod->id])  }}" class="btn btn-sm btn-secondary">Adicionar Item</a>
                     </div>
                 </div>
             </div>

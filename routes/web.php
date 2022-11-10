@@ -24,9 +24,18 @@ Route::match(['get', 'post'], '/categoria/{idcategoria}', [ProdutoController::cl
     Route::match(['get', 'post'], '/categoria', [ProdutoController::class, 'categoria'])
     ->name('categoria');    
 
+
+    //cadastro
 Route::match(['get', 'post'], '/cadastrar', [ClienteController::class, 'cadastrar'])
     ->name('cadastrar');
 
+    Route::match(['get', 'post'], '/cliente/cadastrar', [ClienteController::class, 'cadastrarCliente'])
+    ->name('cadastrar_cliente');
+
+
+
+
+//carrinho
     Route::match(['get', 'post'], '/{idproduto}/carrinho/adicionar', [ProdutoController::class, 'adicionarCarrinho'])
     ->name('adicionar_carrinho');
 

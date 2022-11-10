@@ -5,7 +5,8 @@
 </div>
 
 
-        <form action="" method="post">
+        <form action="{{  route('cadastrar_cliente')  }}" method="post">
+            @csrf
             <div class="row">
             <div class="col-6">
             <div class="form-group">
@@ -22,7 +23,7 @@
 
             <div class="col-6">
             <div class="form-group">
-                Cpf: <input type="text" name="nome" class="form-control" >
+                Cpf: <input type="text" name="cpf" class="form-control" >
             </div>
             </div>
 
@@ -33,9 +34,21 @@
             </div>
             </div>
 
-            <div class="col-12">
+            <div class="col-8">
             <div class="form-group">
                 Endereço: <input type="text" name="endereco" class="form-control" >
+            </div>
+            </div>
+
+            <div class="col-1">
+            <div class="form-group">
+                Número: <input type="text" name="numero" class="form-control" >
+            </div>
+            </div>
+
+            <div class="col-3">
+            <div class="form-group">
+                Complemento: <input type="text" name="complemento" class="form-control" >
             </div>
             </div>
 
